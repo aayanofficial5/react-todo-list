@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: sans-serif, system-ui, Helvetica, Arial;
+  background-color: #7430da;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.todo-container {
+  background-color: #1e1231;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.todo-container h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: #7430da 2px solid;
+  border-right: none;
+}
+
+button.add-btn {
+  padding: 10px 15px;
+  background-color: #7430da;
+  border: #7430da 2px solid;
+  border-left: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.add-btn:hover {
+  background-color: #661cd3;
+}
+
+.todo-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: #7430da;
+}
+
+button.todo-sort {
+  background-color: #7430da;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button.todo-sort:hover {
+  background-color: #661cd3;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  background-color: #7430da;
+  color: white;
+  width: 375px;
+  height: 40px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-checkbox input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: #1e1231;
+}
+
+.task-text {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  background: transparent;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  transform: scale(1.1);
+}
