@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 const TodoForm = ({tasks,setTasks}) => {
   const [task, setTask] = useState('');
-  const handleAddTask = () => {
+  const handleAddTask = (e) => {
+    e.preventDefault();
     const trimmed = task.trim();
     if (trimmed === '') {
       alert('Task cannot be empty!');
@@ -15,7 +16,7 @@ const TodoForm = ({tasks,setTasks}) => {
     setTask('');
   };
   return (
-    <form className="input-wrapper" onSubmit={handleAddTask}>
+    <form className="input-wrapper" onSubmit={(e)=>handleAddTask(e)}>
       <input
         type="text"
         value={task}

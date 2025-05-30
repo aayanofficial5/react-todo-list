@@ -3,7 +3,8 @@ import Todo from "./Components/Todo";
 
 function App() {
   return (
-    <div>
+    <div className="app">
+      <div className="navbar">Assignment - 2 </div>
       <Todo />
     </div>
   );
