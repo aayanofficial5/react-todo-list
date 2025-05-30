@@ -11,7 +11,7 @@ The application also integrates **localStorage** to persist tasks across session
 ## 🚀 Features
 
 - ✅ React functional components with hooks (`useState`, `useEffect`)
-- ✅ Add, delete, and toggle task completion
+- ✅ Add, Edit , delete, and toggle task completion
 - ✅ Input validation (prevents empty tasks)
 - ✅ Dynamic task list rendering
 - ✅ Sort tasks alphabetically (A→Z / Z→A)
@@ -23,7 +23,7 @@ The application also integrates **localStorage** to persist tasks across session
 
 ## 🛠️ Technologies Used
 
-- React (CRA - Create React App)
+- React (using vite)
 - JavaScript (ES6+)
 - CSS (No frameworks or libraries)
 - localStorage (for data persistence)
